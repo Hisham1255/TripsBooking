@@ -142,15 +142,13 @@ var app = builder.Build();
 // =====================
 // Swagger
 // =====================
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
+   app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
         c.SwaggerEndpoint("/swagger/v1/swagger.json", "TripsBooking API");
         c.RoutePrefix = "";
     });
-}
+
 
 // app.UseHttpsRedirection();
 

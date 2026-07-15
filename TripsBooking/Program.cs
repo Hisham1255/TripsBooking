@@ -95,12 +95,13 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend", policy =>
     {
-        policy.WithOrigins(
-             "http://localhost:3001",
-             "http://localhost:3000",
-             "http://172.18.4.4:3000",
-            "https://trips-booking-frontend-i78c-psgnzjm4a-hisham1255s-projects.vercel.app"
-         )
+ policy.WithOrigins(
+    "http://localhost:3001",
+    "http://localhost:3000",
+    "http://172.18.4.4:3000",
+    "https://trips-booking-frontend.vercel.app",
+    "https://trips-booking-frontend-i78c-psgnzjm4a-hisham1255s-projects.vercel.app"
+)
           .AllowAnyMethod()
               .AllowAnyHeader()
               .AllowCredentials();

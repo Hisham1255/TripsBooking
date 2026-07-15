@@ -98,7 +98,8 @@ builder.Services.AddCors(options =>
         policy.WithOrigins(
              "http://localhost:3001",
              "http://localhost:3000",
-             "http://172.18.4.4:3000"
+             "http://172.18.4.4:3000",
+            "https://trips-booking-frontend-i78c-psgnzjm4a-hisham1255s-projects.vercel.app"
          )
           .AllowAnyMethod()
               .AllowAnyHeader()
